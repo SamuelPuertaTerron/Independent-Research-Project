@@ -1,0 +1,5 @@
+﻿  base64.cpp
+  fastgltf.cpp
+  io.cpp
+  simdjson.cpp
+  FASTGLTF.vcxproj -> D:\Work\Code\C++\Uni\IRP\ThirdParty\fastgltf\bin\Debug-windows-x86_64\FASTGLTF\FASTGLTF.lib

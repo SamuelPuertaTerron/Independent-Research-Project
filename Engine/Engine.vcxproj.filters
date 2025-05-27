@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{DBC7D3B0-C769-FE86-B024-12DB9C6585D7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Application">
+      <UniqueIdentifier>{1EA4C00C-0A88-8162-73E8-7BB55FEB6BE4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Application\Input">
+      <UniqueIdentifier>{9D720864-8997-57E4-B2E2-3C749E665602}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Application\Windows">
+      <UniqueIdentifier>{588CC7B1-449C-7382-AD55-D8A09984621B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Core">
+      <UniqueIdentifier>{130D9B61-7FC2-1357-08B7-0D2E746B0A5B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Core\Logging">
+      <UniqueIdentifier>{A9506308-15B2-4016-9E1F-87C80A8077D5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Core\Math">
+      <UniqueIdentifier>{CC955B1D-B88E-7A6F-E1C0-5FF4CD185A7B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Core\Types">
+      <UniqueIdentifier>{F7125AC9-6329-585F-ACA0-E38018F628E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Game">
+      <UniqueIdentifier>{64029D61-D0B7-1557-59AC-0F2EC5600C5B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Render">
+      <UniqueIdentifier>{EAE1D856-56A2-548D-1FDD-9D0A8B5C9969}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Render\DX11">
+      <UniqueIdentifier>{77EADD5B-63CE-9EB1-CC2E-9904B8318933}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Render\OpenGL">
+      <UniqueIdentifier>{DEFF7AE6-CA8E-04B0-73AD-18AB5F1B1556}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Render\Resources">
+      <UniqueIdentifier>{D4F3840A-402B-CDA1-4935-31C5B5EBF39A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Engine.h" />
+    <ClInclude Include="src\Engine\Application\Application.h">
+      <Filter>Engine\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Application\Audio.h">
+      <Filter>Engine\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Application\IApp.h">
+      <Filter>Engine\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Application\IImGuiWindow.h">
+      <Filter>Engine\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Application\INativeWindow.h">
+      <Filter>Engine\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Application\Input\InputManager.h">
+      <Filter>Engine\Application\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Application\Input\KeyCodes.h">
+      <Filter>Engine\Application\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Application\Window.h">
+      <Filter>Engine\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Application\Windows\WindowsInput.h">
+      <Filter>Engine\Application\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Application\Windows\WindowsWindow.h">
+      <Filter>Engine\Application\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Core\Core.h">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Core\Logging\Log.h">
+      <Filter>Engine\Core\Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Core\Math\Math.h">
+      <Filter>Engine\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Core\Math\TVector.h">
+      <Filter>Engine\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Core\Types\TSingleton.h">
+      <Filter>Engine\Core\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Game\Block.h">
+      <Filter>Engine\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Game\BlockType.h">
+      <Filter>Engine\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Game\BoxCollision.h">
+      <Filter>Engine\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Game\Chunk.h">
+      <Filter>Engine\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Game\ChunkLoader.h">
+      <Filter>Engine\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Render\DX11\DX11Buffer.h">
+      <Filter>Engine\Render\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Render\DX11\DX11Camera.h">
+      <Filter>Engine\Render\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Render\DX11\DX11ImGuiWindow.h">
+      <Filter>Engine\Render\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Render\DX11\DX11IndexBuffer.h">
+      <Filter>Engine\Render\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Render\DX11\DX11Mesh.h">
+      <Filter>Engine\Render\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Render\DX11\DX11PixelShader.h">
+      <Filter>Engine\Render\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Render\DX11\DX11RenderContext.h">
+      <Filter>Engine\Render\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Render\DX11\DX11Vertex.h">
+      <Filter>Engine\Render\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Render\DX11\DX11VertexBuffer.h">
+      <Filter>Engine\Render\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Render\DX11\DX11VertexShader.h">
+      <Filter>Engine\Render\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Render\IRenderContext.h">
+      <Filter>Engine\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Render\IShader.h">
+      <Filter>Engine\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Render\OpenGL\OpenGLCamera.h">
+      <Filter>Engine\Render\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Render\OpenGL\OpenGLCreateContext.h">
+      <Filter>Engine\Render\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Render\OpenGL\OpenGLImGuiWindow.h">
+      <Filter>Engine\Render\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Render\OpenGL\OpenGLMesh.h">
+      <Filter>Engine\Render\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Render\OpenGL\OpenGLRenderContext.h">
+      <Filter>Engine\Render\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Render\OpenGL\OpenGLShader.h">
+      <Filter>Engine\Render\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Render\Render.h">
+      <Filter>Engine\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Render\RenderContextAPI.h">
+      <Filter>Engine\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Render\Resources\Camera.h">
+      <Filter>Engine\Render\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Render\Resources\ICameraContext.h">
+      <Filter>Engine\Render\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Render\Resources\IMesh.h">
+      <Filter>Engine\Render\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Render\Vertext.h">
+      <Filter>Engine\Render</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Engine.cpp" />
+    <ClCompile Include="src\Engine\Application\Application.cpp">
+      <Filter>Engine\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Application\Audio.cpp">
+      <Filter>Engine\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Application\IImGuiWindow.cpp">
+      <Filter>Engine\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Application\INativeWindow.cpp">
+      <Filter>Engine\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Application\Input\InputManager.cpp">
+      <Filter>Engine\Application\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Application\Window.cpp">
+      <Filter>Engine\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Application\Windows\WindowsInput.cpp">
+      <Filter>Engine\Application\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Application\Windows\WindowsWindow.cpp">
+      <Filter>Engine\Application\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Core\Logging\Log.cpp">
+      <Filter>Engine\Core\Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Game\Block.cpp">
+      <Filter>Engine\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Game\BoxCollision.cpp">
+      <Filter>Engine\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Game\Chunk.cpp">
+      <Filter>Engine\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Game\ChunkLoader.cpp">
+      <Filter>Engine\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Render\DX11\DX11Buffer.cpp">
+      <Filter>Engine\Render\DX11</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Render\DX11\DX11Camera.cpp">
+      <Filter>Engine\Render\DX11</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Render\DX11\DX11ImGuiWindow.cpp">
+      <Filter>Engine\Render\DX11</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Render\DX11\DX11IndexBuffer.cpp">
+      <Filter>Engine\Render\DX11</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Render\DX11\DX11Mesh.cpp">
+      <Filter>Engine\Render\DX11</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Render\DX11\DX11PixelShader.cpp">
+      <Filter>Engine\Render\DX11</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Render\DX11\DX11RenderContext.cpp">
+      <Filter>Engine\Render\DX11</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Render\DX11\DX11VertexBuffer.cpp">
+      <Filter>Engine\Render\DX11</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Render\DX11\DX11VertexShader.cpp">
+      <Filter>Engine\Render\DX11</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Render\IRenderContext.cpp">
+      <Filter>Engine\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Render\IShader.cpp">
+      <Filter>Engine\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Render\OpenGL\OpenGLCamera.cpp">
+      <Filter>Engine\Render\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Render\OpenGL\OpenGLCreateContext.cpp">
+      <Filter>Engine\Render\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Render\OpenGL\OpenGLImGuiWindow.cpp">
+      <Filter>Engine\Render\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Render\OpenGL\OpenGLMesh.cpp">
+      <Filter>Engine\Render\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Render\OpenGL\OpenGLRenderContext.cpp">
+      <Filter>Engine\Render\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Render\OpenGL\OpenGLShader.cpp">
+      <Filter>Engine\Render\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Render\Render.cpp">
+      <Filter>Engine\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Render\Resources\Camera.cpp">
+      <Filter>Engine\Render\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Render\Resources\ICameraContext.cpp">
+      <Filter>Engine\Render\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Render\Resources\IMesh.cpp">
+      <Filter>Engine\Render\Resources</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DBC7D3B0-C769-FE86-B024-12DB9C6585D7}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Engine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\bin\Debug-windows-x86_64\Engine\</OutDir>
+    <IntDir>..\bin-int\Debug-windows-x86_64\Engine\</IntDir>
+    <TargetName>Engine</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\bin\Release-windows-x86_64\Engine\</OutDir>
+    <IntDir>..\bin-int\Release-windows-x86_64\Engine\</IntDir>
+    <TargetName>Engine</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Engine.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>E_PLATFORM_WINDOWS;E_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src;ThirdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Engine.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>E_PLATFORM_WINDOWS;E_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src;ThirdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Engine.h" />
+    <ClInclude Include="src\Engine\Application\Application.h" />
+    <ClInclude Include="src\Engine\Application\Audio.h" />
+    <ClInclude Include="src\Engine\Application\IApp.h" />
+    <ClInclude Include="src\Engine\Application\IImGuiWindow.h" />
+    <ClInclude Include="src\Engine\Application\INativeWindow.h" />
+    <ClInclude Include="src\Engine\Application\Input\InputManager.h" />
+    <ClInclude Include="src\Engine\Application\Input\KeyCodes.h" />
+    <ClInclude Include="src\Engine\Application\Window.h" />
+    <ClInclude Include="src\Engine\Application\Windows\WindowsInput.h" />
+    <ClInclude Include="src\Engine\Application\Windows\WindowsWindow.h" />
+    <ClInclude Include="src\Engine\Core\Core.h" />
+    <ClInclude Include="src\Engine\Core\Logging\Log.h" />
+    <ClInclude Include="src\Engine\Core\Math\Math.h" />
+    <ClInclude Include="src\Engine\Core\Math\TVector.h" />
+    <ClInclude Include="src\Engine\Core\Types\TSingleton.h" />
+    <ClInclude Include="src\Engine\Game\Block.h" />
+    <ClInclude Include="src\Engine\Game\BlockType.h" />
+    <ClInclude Include="src\Engine\Game\BoxCollision.h" />
+    <ClInclude Include="src\Engine\Game\Chunk.h" />
+    <ClInclude Include="src\Engine\Game\ChunkLoader.h" />
+    <ClInclude Include="src\Engine\Render\DX11\DX11Buffer.h" />
+    <ClInclude Include="src\Engine\Render\DX11\DX11Camera.h" />
+    <ClInclude Include="src\Engine\Render\DX11\DX11ImGuiWindow.h" />
+    <ClInclude Include="src\Engine\Render\DX11\DX11IndexBuffer.h" />
+    <ClInclude Include="src\Engine\Render\DX11\DX11Mesh.h" />
+    <ClInclude Include="src\Engine\Render\DX11\DX11PixelShader.h" />
+    <ClInclude Include="src\Engine\Render\DX11\DX11RenderContext.h" />
+    <ClInclude Include="src\Engine\Render\DX11\DX11Vertex.h" />
+    <ClInclude Include="src\Engine\Render\DX11\DX11VertexBuffer.h" />
+    <ClInclude Include="src\Engine\Render\DX11\DX11VertexShader.h" />
+    <ClInclude Include="src\Engine\Render\IRenderContext.h" />
+    <ClInclude Include="src\Engine\Render\IShader.h" />
+    <ClInclude Include="src\Engine\Render\OpenGL\OpenGLCamera.h" />
+    <ClInclude Include="src\Engine\Render\OpenGL\OpenGLCreateContext.h" />
+    <ClInclude Include="src\Engine\Render\OpenGL\OpenGLImGuiWindow.h" />
+    <ClInclude Include="src\Engine\Render\OpenGL\OpenGLMesh.h" />
+    <ClInclude Include="src\Engine\Render\OpenGL\OpenGLRenderContext.h" />
+    <ClInclude Include="src\Engine\Render\OpenGL\OpenGLShader.h" />
+    <ClInclude Include="src\Engine\Render\Render.h" />
+    <ClInclude Include="src\Engine\Render\RenderContextAPI.h" />
+    <ClInclude Include="src\Engine\Render\Resources\Camera.h" />
+    <ClInclude Include="src\Engine\Render\Resources\ICameraContext.h" />
+    <ClInclude Include="src\Engine\Render\Resources\IMesh.h" />
+    <ClInclude Include="src\Engine\Render\Vertext.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Engine.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Application\Application.cpp" />
+    <ClCompile Include="src\Engine\Application\Audio.cpp" />
+    <ClCompile Include="src\Engine\Application\IImGuiWindow.cpp" />
+    <ClCompile Include="src\Engine\Application\INativeWindow.cpp" />
+    <ClCompile Include="src\Engine\Application\Input\InputManager.cpp" />
+    <ClCompile Include="src\Engine\Application\Window.cpp" />
+    <ClCompile Include="src\Engine\Application\Windows\WindowsInput.cpp" />
+    <ClCompile Include="src\Engine\Application\Windows\WindowsWindow.cpp" />
+    <ClCompile Include="src\Engine\Core\Logging\Log.cpp" />
+    <ClCompile Include="src\Engine\Game\Block.cpp" />
+    <ClCompile Include="src\Engine\Game\BoxCollision.cpp" />
+    <ClCompile Include="src\Engine\Game\Chunk.cpp" />
+    <ClCompile Include="src\Engine\Game\ChunkLoader.cpp" />
+    <ClCompile Include="src\Engine\Render\DX11\DX11Buffer.cpp" />
+    <ClCompile Include="src\Engine\Render\DX11\DX11Camera.cpp" />
+    <ClCompile Include="src\Engine\Render\DX11\DX11ImGuiWindow.cpp" />
+    <ClCompile Include="src\Engine\Render\DX11\DX11IndexBuffer.cpp" />
+    <ClCompile Include="src\Engine\Render\DX11\DX11Mesh.cpp" />
+    <ClCompile Include="src\Engine\Render\DX11\DX11PixelShader.cpp" />
+    <ClCompile Include="src\Engine\Render\DX11\DX11RenderContext.cpp" />
+    <ClCompile Include="src\Engine\Render\DX11\DX11VertexBuffer.cpp" />
+    <ClCompile Include="src\Engine\Render\DX11\DX11VertexShader.cpp" />
+    <ClCompile Include="src\Engine\Render\IRenderContext.cpp" />
+    <ClCompile Include="src\Engine\Render\IShader.cpp" />
+    <ClCompile Include="src\Engine\Render\OpenGL\OpenGLCamera.cpp" />
+    <ClCompile Include="src\Engine\Render\OpenGL\OpenGLCreateContext.cpp" />
+    <ClCompile Include="src\Engine\Render\OpenGL\OpenGLImGuiWindow.cpp" />
+    <ClCompile Include="src\Engine\Render\OpenGL\OpenGLMesh.cpp" />
+    <ClCompile Include="src\Engine\Render\OpenGL\OpenGLRenderContext.cpp" />
+    <ClCompile Include="src\Engine\Render\OpenGL\OpenGLShader.cpp" />
+    <ClCompile Include="src\Engine\Render\Render.cpp" />
+    <ClCompile Include="src\Engine\Render\Resources\Camera.cpp" />
+    <ClCompile Include="src\Engine\Render\Resources\ICameraContext.cpp" />
+    <ClCompile Include="src\Engine\Render\Resources\IMesh.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ThirdParty\stb_image\STBIMAGE.vcxproj">
+      <Project>{B10B70F6-9DD8-CA01-C6F1-B8A9B21D0090}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ThirdParty\glm\GLM.vcxproj">
+      <Project>{05EB870B-71F4-877C-FA6F-9E7C6678937C}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ThirdParty\ImGui\IMGUI.vcxproj">
+      <Project>{606F530D-CC83-7BBE-9505-1F1E01D977EF}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ThirdParty\fastgltf\FASTGLTF.vcxproj">
+      <Project>{6060F168-4C2D-4C74-7546-3A1C61728102}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ThirdParty\glad\Glad.vcxproj">
+      <Project>{BDD6857C-A90D-870D-52FA-6C103E10030F}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ThirdParty\miniaudio\MINIAUDIO.vcxproj">
+      <Project>{C4549F7D-30BF-53F4-79FD-049AE5A63149}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
